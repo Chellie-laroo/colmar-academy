@@ -1,0 +1,33 @@
+.navbar {
+    height: 64px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+
+.navbar h1 {
+   display: inline;
+   font-size: 32px;
+}
+
+.navbar img {
+    padding-left: 24px;
+}
+
+nav a {
+    float: right;
+    align-items: flex-end;
+    padding: 16px;
+}
+
+nav {
+    padding-right: 24px;
+    font-size: 20px;
+    width: 100%;
+    overflow: hidden;
+} 
+
+.navbar img {
+    height: 80px;
+}
