@@ -1,9 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* navbar section */
+
 .navbar {
     height: 64px;
     background-color: white;
     position: fixed;
     width: 100%;
     display: flex;
+    z-index: 1;
 }
 
 .navbar h1 {
@@ -13,12 +25,15 @@
 
 .navbar img {
     padding-left: 24px;
+    height: 80px;
+    padding-bottom: 10px;
 }
 
 nav a {
     float: right;
     align-items: flex-end;
     padding: 16px;
+    flex-flow: column;
 }
 
 nav {
@@ -28,6 +43,50 @@ nav {
     overflow: hidden;
 } 
 
-.navbar img {
-    height: 80px;
+/* On Campus section */
+
+.campus {
+    background-color: lightgray;
+    display: inline-flex;
+    padding-top: 32px;
+    margin-top: 75px;
+}
+
+.campus img {
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 60%;
+}
+
+.learn h1 {
+    font-weight: bold;
+    font-size: 78px;
+    display: flex;
+}
+
+div.learn {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    padding-left: 48px;
+    text-align: center;
+    padding-right: 24px;
+}
+
+.learn p {
+    font-size: 36px;
+}
+
+.learn button {
+    padding: 8px;
+    background-color: #31373e;
+    color: white;
+    border-radius: 15px;
+    width: 300px;
+    height: 100px;
+    font-size: large;
 }
